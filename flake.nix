@@ -154,6 +154,7 @@
           pname = "lit";
           version = "3.8.5";
           strictDeps = true;
+          env.UV_USE_IO_URING = 0;
 
           src = pkgs.fetchFromGitHub {
             owner = "luvit";
